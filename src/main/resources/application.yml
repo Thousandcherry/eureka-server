@@ -1,14 +1,5 @@
-server:
-    port: 3000
-eureka:
-    instance:
-        hostname: localhost
-        appname: Eureka 注册中心
-        prefer-ip-address: true
-        lease-renewal-interval-in-seconds: 30
-        lease-expiration-duration-in-seconds: 90
-    client:
-        register-with-eureka: false
-        fetch-registry: false
-        service-url:
-            defaultZone: http://localhost:${server.port}/eureka
+spring:
+    application:
+        name: eureka-server
+    profiles:
+        active: dev
