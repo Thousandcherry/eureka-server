@@ -1,5 +1,5 @@
 #基础镜像
-FROM adoptopenjdk/openjdk8:centos
+FROM zengxiangkai/jdk8:centos7
 #作者
 LABEL maintainer="14268414+Thousandcherry@users.noreply.github.com"
 #创建目录
